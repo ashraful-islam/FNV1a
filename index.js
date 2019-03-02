@@ -7,10 +7,12 @@ const SIZE_MAP = {
           PRIME: 1099511628211,
           OFFSET_BASIS: 14695981039346656037,
   },
+  /** unsupported due to overflow
   '128bit': {
           PRIME: 309485009821345068724781371,
           OFFSET_BASIS: 144066263297769815596495629667062367629
   }
+  **/
 };
 
 function fnv1a(str, size) {
