@@ -29,5 +29,5 @@ function fnv1a(str, size) {
       hash = hash * PRIME;
   }
 
-  return hash;
+  return (hash >>> 1);
 }
