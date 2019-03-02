@@ -25,7 +25,7 @@ function fnv1a(str, size) {
   }
   let hash = OFFSET_BASIS;
   for ( let i = 0; i < str.length; ++i ) {
-      hash = hash ^ str.charAt(i);
+      hash = hash ^ str.charCodeAt(i);
       hash = hash * PRIME;
   }
 
